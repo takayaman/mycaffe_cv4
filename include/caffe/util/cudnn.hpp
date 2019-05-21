@@ -45,6 +45,10 @@ inline const char* cudnnGetErrorString(cudnnStatus_t status) {
     case CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING:
       return "CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING";
 #endif
+	case "CUDNN_STATUS_RUNTIME_IN_PROGRESS":
+	  return "CUDNN_STATUS_RUNTIME_IN_PROGRESS";
+    case "CUDNN_STATUS_RUNTIME_FP_OVERFLOW":
+	  return "CUDNN_STATUS_RUNTIME_FP_OVERFLOW";
   }
   return "Unknown cudnn status";
 }
